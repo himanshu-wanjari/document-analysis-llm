@@ -1,29 +1,18 @@
-# Predictive Keyboard Model using LSTM and Transformers
+# Document Analysis using LLMs (Large Language Models)
 
-This project replicates the behavior of a predictive typing keyboard by training a deep learning model (LSTM/Transformer) to suggest the next word based on previous input. It simulates how smartphones predict text input using large language models.
+This project leverages transformer-based large language models to extract summaries, generate answers, and identify insights from unstructured PDF documents. Built as a context-aware document assistant using Python and LLM libraries.
 
-## 💡 What It Does
+## 🧠 Features
 
-- Predicts the next word in a sentence based on input context
-- Handles variable-length sequences using padding and truncation
-- Uses tokenization, embedding layers, and sequential models
+- Extracts text from scanned or digital PDFs
+- Summarizes long documents intelligently
+- Performs context-aware Question Answering
+- Works with financial reports, contracts, legal docs, etc.
 
-## ⚙️ Model Details
+## 🛠️ Technologies
 
-- LSTM-based RNN model using Keras
-- Transformer model using HuggingFace or TensorFlow's Attention layers
-- Trained on public text datasets (e.g., Gutenberg, Wikipedia dumps)
-
-## 📚 Tech Stack
-
-- Python (TensorFlow/Keras, HuggingFace Transformers, NLTK)
-- Jupyter Notebook / Colab
-- Matplotlib for visualization
-
-## 📊 Dataset
-
-- Text corpus (cleaned and tokenized)
-- Vocabulary built using frequency thresholds
-
-## 📂 Project Structure
-
+- Python
+- pdfplumber for PDF text extraction
+- HuggingFace Transformers (T5 model)
+- NLTK for preprocessing and sentence parsing
+- Streamlit (optional UI)
